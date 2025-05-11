@@ -1,0 +1,121 @@
+/* Общая тема */
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2e2e2e; /* Темный фон */
+    color: #e0e0e0; /* Світлий текст */
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Чтобы учитывать padding и border в размерах элементов */
+}
+
+/* Кнопки */
+QPushButton {
+    background-color: #5CDB95; /* Ярче, но гармонирующее с фоном */
+    border-radius: 12px; /* Увеличено округление кнопок */
+    color: white;
+    padding: 14px 28px; /* Увеличены отступы */
+    font-size: 20px; /* Увеличен размер шрифта */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+QPushButton:hover {
+    background-color: #4CAF50; /* Легкий відтінок зеленого при наведенні */
+    transform: scale(1.07); /* Легкое увеличение при наведении */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Легкий тень при наведении */
+}
+
+QPushButton:pressed {
+    background-color: #3e8e41; /* При натисканні кнопка трохи темніша */
+    transform: scale(0.95); /* Эффект уменьшения при нажатии */
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2); /* Внутренняя тень при нажатии */
+}
+
+/* Поля вводу */
+QLineEdit {
+    background-color: #333333;
+    color: #e0e0e0;
+    border-radius: 10px; /* Уменьшены углы для мягкости */
+    padding: 10px; /* Увеличены отступы */
+    font-size: 18px; /* Увеличен размер шрифта */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+QLineEdit:focus {
+    border: 2px solid #4CAF50;
+    background-color: #444444;
+}
+
+/* Лейбли */
+QLabel {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px; /* Увеличен размер шрифта */
+    color: #e0e0e0;
+    margin-bottom: 15px; /* Увеличено расстояние между лейблом и другими элементами */
+    font-weight: 600;
+}
+
+/* Вікна та контейнери */
+QWidget {
+    border-radius: 15px; /* Сделаем более округленными */
+    padding: 25px; /* Увеличены отступы */
+    background-color: #2e2e2e;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Более мягкая тень */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+QWidget:focus {
+    border: 2px solid #4CAF50;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Увеличена тень при фокусе */
+    transform: scale(1.02); /* Немного увеличиваем окно при фокусе */
+}
+
+/* Контейнеры для кнопок и лейблов */
+QVBoxLayout {
+    spacing: 20px; /* Увеличены интервалы между элементами */
+}
+
+QHBoxLayout {
+    spacing: 20px;
+}
+
+/* Поле вводу для пароля */
+QLineEdit#password {
+    background-color: #444444;
+}
+
+QLineEdit#password:focus {
+    border: 2px solid #FF5733;
+}
+
+/* Підказки для полів вводу */
+QToolTip {
+    background-color: #333333;
+    color: #e0e0e0;
+    border: 1px solid #4CAF50;
+    padding: 8px;
+    font-size: 16px; /* Увеличен размер шрифта для подсказок */
+    border-radius: 6px; /* Округленные углы для подсказок */
+}
+
+/* Дополнительные стили для модальных окон */
+QDialog {
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+QDialog QLabel {
+    font-size: 18px; /* Увеличен размер шрифта для текста в диалогах */
+}
+
+/* Стиль для текста в диалогах */
+QTextEdit {
+    background-color: #333333;
+    color: #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+}

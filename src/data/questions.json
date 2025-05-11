@@ -1,0 +1,1028 @@
+{
+    "easy": {
+      "level_1": [
+    {
+      "question": "What is the correct file extension for Python files?",
+      "options": [
+        ".py",
+        ".pt",
+        ".pyt",
+        ".python"
+      ],
+      "answers": ".py",
+      "explanation": "The '.py' extension is the standard for Python files. '.pt' is used for PyTorch models, '.pyt' is not a recognized extension, and '.python' is never used as a file extension.",
+      "type": "multi"
+    },
+    {
+      "question": "Which keyword is used to define a function in Python?",
+      "options": [
+        "function",
+        "def",
+        "define",
+        "func"
+      ],
+      "answers": "def",
+      "explanation": "Python uses 'def' to define functions. 'function' is used in JavaScript, 'define' is not a Python keyword, and 'func' is sometimes used as a variable name but not for definition.",
+      "type": "multi"
+    },
+    {
+      "question": "Which of the following is a correct variable name in Python?",
+      "options": [
+        "2value",
+        "value_2",
+        "value-2",
+        "value.2"
+      ],
+      "answers": "value_2",
+      "explanation": "Python variable names can contain letters, numbers and underscores but cannot start with numbers (2value), contain hyphens (value-2), or dots (value.2). Underscores are perfectly valid (value_2).",
+      "type": "multi"
+    },
+    {
+      "question": "What symbol is used to comment a single line in Python?",
+      "options": [
+        "//",
+        "#",
+        "--",
+        "/*"
+      ],
+      "answers": "#",
+      "explanation": "Python uses '#' for single-line comments. '//' is used in C-style languages, '--' in SQL, and '/*' starts multi-line comments in C/Java but doesn't work in Python.",
+      "type": "multi"
+    },
+    {
+      "question": "What is the output of: print(2 + 3 * 4)?",
+      "options": [
+        "14",
+        "20",
+        "24",
+        "9"
+      ],
+      "answers": "14",
+      "explanation": "Due to operator precedence, multiplication (3*4=12) happens before addition (2+12=14). The wrong answers come from either adding first (2+3=5 then 5*4=20) or incorrect multiplication (3*4=12 then 2+12=24 is wrong math).",
+      "type": "multi"
+    },
+    {
+      "question": "Which data type is used to store True or False?",
+      "options": [
+        "int",
+        "bool",
+        "str",
+        "boolean"
+      ],
+      "answers": "bool",
+      "explanation": "Python's boolean type is called 'bool'. While 'boolean' might seem correct, it's not the actual type name. 'int' can represent 1/0 but isn't the proper type, and 'str' would store these as strings.",
+      "type": "multi"
+    },
+    {
+      "question": "What does len('hello') return?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "Error"
+      ],
+      "answers": "5",
+      "explanation": "The string 'hello' has 5 characters (h,e,l,l,o). Counting starts at 1 for length. It won't error because len() works on strings, and there's no reason it would return 4 or 6.",
+      "type": "multi"
+    },
+    {
+      "question": "Which operator is used to check equality in Python?",
+      "options": [
+        "=",
+        "==",
+        "===",
+        "equals"
+      ],
+      "answers": "==",
+      "explanation": "Python uses '==' for equality comparison. '=' is for assignment, '===' doesn't exist in Python (it's a JavaScript operator), and 'equals' is a method name in some languages but not an operator.",
+      "type": "multi"
+    },
+    {
+      "question": "Which of the following is used to loop over a sequence?",
+      "options": [
+        "for",
+        "loop",
+        "iterate",
+        "foreach"
+      ],
+      "answers": "for",
+      "explanation": "Python uses 'for' loops to iterate over sequences. 'loop' and 'iterate' aren't keywords, and 'foreach' is used in some languages but not Python (which uses 'for' for both cases).",
+      "type": "multi"
+    },
+    {
+      "question": "What does the 'input()' function do?",
+      "options": [
+        "Outputs text",
+        "Gets user input",
+        "Calculates values",
+        "Reads files"
+      ],
+      "answers": "Gets user input",
+      "explanation": "input() pauses execution and waits for user keyboard input. It doesn't output text (that's print()), calculate values (that's math operations), or read files (that's open()).",
+      "type": "multi"
+    }
+  ],
+    "level_2": [
+      {
+        "question": "Which keyword is used to start an 'if' statement in Python?",
+        "options": [
+          "if",
+          "when",
+          "check",
+          "condition"
+        ],
+        "answers": "if",
+        "type": "multi",
+        "explanation": "The 'if' keyword is used to start a conditional statement."
+      },
+      {
+        "question": "What is the correct syntax for an 'if-else' statement in Python?",
+        "options": [
+          "if condition then ... else ...",
+          "if (condition) {...} else {...}",
+          "if condition: ... else: ...",
+          "if condition -> ... else -> ..."
+        ],
+        "answers": "if condition: ... else: ...",
+        "type": "multi",
+        "explanation": "Python uses colons and indentation for if-else statements."
+      },
+      {
+        "question": "Which operator is used for 'not equal' comparison in Python?",
+        "options": [
+          "!=",
+          "<>",
+          "~=",
+          "=/="
+        ],
+        "answers": "!=",
+        "type": "multi",
+        "explanation": "The '!=' operator checks if two values are not equal."
+      },
+      {
+        "question": "What will 'print(10 > 9)' output?",
+        "options": [
+          "True",
+          "False",
+          "10",
+          "Error"
+        ],
+        "answers": "True",
+        "type": "multi",
+        "explanation": "The expression evaluates to True because 10 is greater than 9."
+      },
+      {
+        "question": "Which of these is the correct way to check multiple conditions?",
+        "options": [
+          "if a and b:",
+          "if a && b:",
+          "if a & b:",
+          "if a then b:"
+        ],
+        "answers": "if a and b:",
+        "type": "multi",
+        "explanation": "Python uses 'and' for logical AND operations, not '&&'."
+      },
+      {
+        "question": "What does the 'elif' keyword mean in Python?",
+        "options": [
+          "End if",
+          "Else if",
+          "Error if",
+          "Extended if"
+        ],
+        "answers": "Else if",
+        "type": "multi",
+        "explanation": "'elif' is short for 'else if' and is used for multiple conditions."
+      },
+      {
+        "question": "What will be the output of 'print(not True)'?",
+        "options": [
+          "True",
+          "False",
+          "None",
+          "Error"
+        ],
+        "answers": "False",
+        "type": "multi",
+        "explanation": "The 'not' operator inverts the boolean value."
+      },
+      {
+        "question": "Which operator has the highest precedence in 'if x > 5 and y < 10 or z == 0'?",
+        "options": [
+          "and",
+          "or",
+          ">",
+          "=="
+        ],
+        "answers": ">",
+        "type": "multi",
+        "explanation": "Comparison operators (>, <, ==) have higher precedence than logical operators."
+      },
+      {
+        "question": "What is the purpose of the 'pass' statement in an if block?",
+        "options": [
+          "To skip the condition",
+          "To terminate the program",
+          "To do nothing (placeholder)",
+          "To pass a value"
+        ],
+        "answers": "To do nothing (placeholder)",
+        "type": "multi",
+        "explanation": "'pass' is a null operation used when syntax requires a statement but no action is needed."
+      },
+      {
+        "question": "Which of these is NOT a valid conditional statement?",
+        "options": [
+          "if x in [1,2,3]:",
+          "if 5 <= x <= 10:",
+          "if x = 5:",
+          "if x is None:"
+        ],
+        "answers": "if x = 5:",
+        "type": "multi",
+        "explanation": "This uses assignment (=) instead of comparison (==)."
+      }
+    ],
+    "level_3": [
+      {
+        "question": "Which keyword is used to create a loop in Python?",
+        "options": [
+          "repeat",
+          "for",
+          "loop",
+          "cycle"
+        ],
+        "answers": "for",
+        "type": "multi",
+        "explanation": "Python uses 'for' and 'while' to create loops."
+      },
+      {
+        "question": "What does the 'range(5)' function generate?",
+        "options": [
+          "Numbers 0 through 4",
+          "Numbers 1 through 5",
+          "Five random numbers",
+          "A list with five zeros"
+        ],
+        "answers": "Numbers 0 through 4",
+        "type": "multi",
+        "explanation": "range(n) generates numbers from 0 to n-1."
+      },
+      {
+        "question": "Which statement is used to skip the current iteration of a loop?",
+        "options": [
+          "skip",
+          "next",
+          "continue",
+          "break"
+        ],
+        "answers": "continue",
+        "type": "multi",
+        "explanation": "'continue' skips the rest of the current iteration and moves to the next one."
+      },
+      {
+        "question": "What will 'while False: print(1)' do?",
+        "options": [
+          "Print 1 once",
+          "Print 1 forever",
+          "Do nothing",
+          "Cause an error"
+        ],
+        "answers": "Do nothing",
+        "type": "multi",
+        "explanation": "The condition is never true, so the loop body never executes."
+      },
+      {
+        "question": "How many times will 'for i in range(3): print(i)' print?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "answers": "3",
+        "type": "multi",
+        "explanation": "range(3) produces 0, 1, 2 - three numbers in total."
+      },
+      {
+        "question": "Which statement immediately exits a loop?",
+        "options": [
+          "exit",
+          "stop",
+          "break",
+          "return"
+        ],
+        "answers": "break",
+        "type": "multi",
+        "explanation": "'break' exits the nearest enclosing loop."
+      },
+      {
+        "question": "What does the 'else' clause do in a Python loop?",
+        "options": [
+          "Runs if the loop completes normally",
+          "Runs if the loop encounters an error",
+          "Runs only if 'break' was used",
+          "Is invalid syntax in loops"
+        ],
+        "answers": "Runs if the loop completes normally",
+        "type": "multi",
+        "explanation": "The 'else' clause executes after the loop finishes, unless 'break' was used."
+      },
+      {
+        "question": "What is the output of 'for x in [1,2,3]: print(x, end=\" \")'?",
+        "options": [
+          "1 2 3",
+          "123",
+          "[1, 2, 3]",
+          "1\n2\n3"
+        ],
+        "answers": "1 2 3",
+        "type": "multi",
+        "explanation": "The 'end=\" \"' parameter makes print() use space instead of newline."
+      },
+      {
+        "question": "Which loop is best when the number of iterations is unknown?",
+        "options": [
+          "for",
+          "while",
+          "repeat",
+          "foreach"
+        ],
+        "answers": "while",
+        "type": "multi",
+        "explanation": "'while' loops are used when you don't know how many iterations you'll need."
+      },
+      {
+        "question": "What does 'for i, value in enumerate([\"a\",\"b\"]):' give in the first iteration?",
+        "options": [
+          "i=0, value=\"a\"",
+          "i=1, value=\"a\"",
+          "i=\"a\", value=0",
+          "i=0, value=0"
+        ],
+        "answers": "i=0, value=\"a\"",
+        "type": "multi",
+        "explanation": "enumerate() returns both index and value, starting from 0."
+      }
+    ],
+    "level_4": [
+      {
+        "question": "Which of these is a mutable collection in Python?",
+        "options": [
+          "tuple",
+          "list",
+          "string",
+          "frozenset"
+        ],
+        "answers": "list",
+        "type": "multi",
+        "explanation": "Lists are mutable (can be changed after creation)."
+      },
+      {
+        "question": "How do you access the second element of a list?",
+        "options": [
+          "list[1]",
+          "list[2]",
+          "list(1)",
+          "list.get(2)"
+        ],
+        "answers": "list[1]",
+        "type": "multi",
+        "explanation": "Python uses zero-based indexing, so index 1 is the second element."
+      },
+      {
+        "question": "Which method adds an element to the end of a list?",
+        "options": [
+          "append()",
+          "add()",
+          "insert()",
+          "push()"
+        ],
+        "answers": "append()",
+        "type": "multi",
+        "explanation": "append() adds an item to the end of the list."
+      },
+      {
+        "question": "What is the result of {'a':1, 'b':2}['b']?",
+        "options": [
+          "1",
+          "2",
+          "'a'",
+          "KeyError"
+        ],
+        "answers": "2",
+        "type": "multi",
+        "explanation": "This accesses the value associated with the key 'b'."
+      },
+      {
+        "question": "Which collection type doesn't allow duplicates?",
+        "options": [
+          "list",
+          "tuple",
+          "set",
+          "array"
+        ],
+        "answers": "set",
+        "type": "multi",
+        "explanation": "Sets automatically remove duplicate elements."
+      },
+      {
+        "question": "How do you create an empty dictionary?",
+        "options": [
+          "{}",
+          "dict()",
+          "[]",
+          "Both {} and dict()"
+        ],
+        "answers": "Both {} and dict()",
+        "type": "multi",
+        "explanation": "Both syntaxes create an empty dictionary."
+      },
+      {
+        "question": "What does [1,2,3][1:] return?",
+        "options": [
+          "[1]",
+          "[2]",
+          "[2,3]",
+          "[1,2]"
+        ],
+        "answers": "[2,3]",
+        "type": "multi",
+        "explanation": "Slicing from index 1 to the end returns all elements from index 1 onward."
+      },
+      {
+        "question": "Which method removes and returns the last item of a list?",
+        "options": [
+          "remove()",
+          "pop()",
+          "delete()",
+          "cut()"
+        ],
+        "answers": "pop()",
+        "type": "multi",
+        "explanation": "pop() without an index removes and returns the last item."
+      },
+      {
+        "question": "What is the result of set([1,1,2,3])?",
+        "options": [
+          "[1,1,2,3]",
+          "[1,2,3]",
+          "Error",
+          "{1,2,3}"
+        ],
+        "answers": "{1,2,3}",
+        "type": "multi",
+        "explanation": "Sets remove duplicates, and are displayed with curly braces."
+      },
+      {
+        "question": "How do you get all keys from a dictionary?",
+        "options": [
+          "dict.keys()",
+          "dict.get_keys()",
+          "dict.all_keys()",
+          "dict.key_list()"
+        ],
+        "answers": "dict.keys()",
+        "type": "multi",
+        "explanation": "The keys() method returns a view of all keys in the dictionary."
+      }
+    ],
+    "level_5": [
+      {
+        "question": "Which keyword is used to define a function in Python?",
+        "options": [
+          "def",
+          "function",
+          "func",
+          "define"
+        ],
+        "answers": "def",
+        "type": "multi",
+        "explanation": "Functions are defined using the 'def' keyword."
+      },
+      {
+        "question": "What is the correct way to call a function named 'my_func'?",
+        "options": [
+          "call my_func()",
+          "my_func",
+          "my_func()",
+          "run my_func"
+        ],
+        "answers": "my_func()",
+        "type": "multi",
+        "explanation": "Functions are called using parentheses after their name."
+      },
+      {
+        "question": "What does 'return' do in a function?",
+        "options": [
+          "Exits the program",
+          "Returns a value and exits the function",
+          "Prints a value",
+          "Continues to next line"
+        ],
+        "answers": "Returns a value and exits the function",
+        "type": "multi",
+        "explanation": "'return' sends a value back to the caller and exits the function."
+      },
+      {
+        "question": "What is a default argument?",
+        "options": [
+          "An argument that must be provided",
+          "An argument with a predefined value",
+          "The first argument in a function",
+          "An argument that can't be changed"
+        ],
+        "answers": "An argument with a predefined value",
+        "type": "multi",
+        "explanation": "Default arguments have values specified in the function definition."
+      },
+      {
+        "question": "What does *args allow in a function definition?",
+        "options": [
+          "Only keyword arguments",
+          "A variable number of positional arguments",
+          "Only one argument",
+          "No arguments"
+        ],
+        "answers": "A variable number of positional arguments",
+        "type": "multi",
+        "explanation": "*args collects extra positional arguments into a tuple."
+      },
+      {
+        "question": "What is the scope of a variable defined inside a function?",
+        "options": [
+          "Global",
+          "Local",
+          "Universal",
+          "Module-level"
+        ],
+        "answers": "Local",
+        "type": "multi",
+        "explanation": "Variables inside functions are local to that function."
+      },
+      {
+        "question": "How can a function access a global variable?",
+        "options": [
+          "It's automatic",
+          "Using the 'global' keyword",
+          "With the 'access' keyword",
+          "It can't"
+        ],
+        "answers": "Using the 'global' keyword",
+        "type": "multi",
+        "explanation": "The 'global' keyword allows modifying global variables from within a function."
+      },
+      {
+        "question": "What is a lambda function?",
+        "options": [
+          "A large function",
+          "An anonymous function",
+          "A recursive function",
+          "A function with many arguments"
+        ],
+        "answers": "An anonymous function",
+        "type": "multi",
+        "explanation": "Lambda functions are small anonymous functions defined with the lambda keyword."
+      },
+      {
+        "question": "What does this do: 'def func(a, b=2): return a*b' when called as func(3)?",
+        "options": [
+          "6",
+          "Error",
+          "5",
+          "None"
+        ],
+        "answers": "6",
+        "type": "multi",
+        "explanation": "b has a default value of 2, so 3 * 2 = 6."
+      },
+      {
+        "question": "Which statement about function return values is true?",
+        "options": [
+          "Functions must return a value",
+          "Functions can return multiple values",
+          "Functions can only return once",
+          "Return values must be numbers"
+        ],
+        "answers": "Functions can return multiple values",
+        "type": "multi",
+        "explanation": "Functions can return multiple values as a tuple."
+      }
+    ],
+    "level_6": [
+      {
+        "question": "Which keyword is used to create a class in Python?",
+        "options": [
+          "object",
+          "class",
+          "struct",
+          "type"
+        ],
+        "answers": "class",
+        "type": "multi",
+        "explanation": "The 'class' keyword is used to define new classes."
+      },
+      {
+        "question": "What is the correct way to define a class method?",
+        "options": [
+          "def method(self):",
+          "function method():",
+          "method(self):",
+          "def method():"
+        ],
+        "answers": "def method(self):",
+        "type": "multi",
+        "explanation": "Instance methods take 'self' as their first parameter."
+      },
+      {
+        "question": "What is '__init__' used for?",
+        "options": [
+          "Class destruction",
+          "Object initialization",
+          "Class documentation",
+          "Method overloading"
+        ],
+        "answers": "Object initialization",
+        "type": "multi",
+        "explanation": "__init__ is the constructor method that initializes new objects."
+      },
+      {
+        "question": "How do you create an instance of a class?",
+        "options": [
+          "new ClassName()",
+          "ClassName()",
+          "create ClassName",
+          "ClassName.new()"
+        ],
+        "answers": "ClassName()",
+        "type": "multi",
+        "explanation": "Class instances are created by calling the class like a function."
+      },
+      {
+        "question": "What does 'self' refer to in a class method?",
+        "options": [
+          "The class itself",
+          "The parent class",
+          "The instance of the class",
+          "The module containing the class"
+        ],
+        "answers": "The instance of the class",
+        "type": "multi",
+        "explanation": "'self' refers to the instance calling the method."
+      },
+      {
+        "question": "Which method is called when printing an object?",
+        "options": [
+          "__print__",
+          "__str__",
+          "__repr__",
+          "__display__"
+        ],
+        "answers": "__str__",
+        "type": "multi",
+        "explanation": "__str__ defines the string representation of an object."
+      },
+      {
+        "question": "What is inheritance in OOP?",
+        "options": [
+          "Creating new objects",
+          "Passing parameters between methods",
+          "A class acquiring properties of another class",
+          "Storing data in classes"
+        ],
+        "answers": "A class acquiring properties of another class",
+        "type": "multi",
+        "explanation": "Inheritance allows a class to inherit attributes and methods from a parent class."
+      },
+      {
+        "question": "How do you call a parent class method from a child class?",
+        "options": [
+          "parent.method()",
+          "super().method()",
+          "self.parent.method()",
+          "ParentClass.method()"
+        ],
+        "answers": "super().method()",
+        "type": "multi",
+        "explanation": "super() is used to access parent class methods."
+      },
+      {
+        "question": "What is encapsulation?",
+        "options": [
+          "Hiding implementation details",
+          "Creating many classes",
+          "Making all methods public",
+          "Using multiple inheritance"
+        ],
+        "answers": "Hiding implementation details",
+        "type": "multi",
+        "explanation": "Encapsulation is about bundling data and methods and controlling access."
+      },
+      {
+        "question": "What does @classmethod decorator do?",
+        "options": [
+          "Makes a method receive the class as first argument",
+          "Makes a method static",
+          "Prevents method overriding",
+          "Makes a method private"
+        ],
+        "answers": "Makes a method receive the class as first argument",
+        "type": "multi",
+        "explanation": "classmethod decorator makes the method receive the class (cls) instead of instance (self)."
+      }
+    ]
+  },
+  "medium": {
+    "level_1": [
+      {
+        "question": "How do you comment a single line in Python?",
+        "type": "text",
+        "answers": ["#", "# comment"],
+        "explanation": "The hash symbol (#) starts a single-line comment"
+      },
+      {
+        "question": "How do you write a multi-line comment in Python?",
+        "type": "text",
+        "answers": ["\"\"\"comment\"\"\"", "'''comment'''"],
+        "explanation": "Triple quotes (single or double) create multi-line comments or docstrings"
+      },
+      {
+        "question": "What symbol is used for string formatting with f-strings?",
+        "type": "text",
+        "answers": ["f\"{}\"", "F\"{}\""],
+        "explanation": "The 'f' prefix enables f-strings with curly braces for variables"
+      },
+      {
+        "question": "How do you write an empty `for` loop?",
+        "type": "text",
+        "answers": ["pass", "for x in y:\n    pass"],
+        "explanation": "`pass` is a null operation placeholder"
+      },
+      {
+        "question": "What is the correct way to break a line of code?",
+        "type": "text",
+        "answers": ["\\", "()"],
+        "explanation": "Backslash or parentheses allow line continuation"
+      },
+      {
+        "question": "How do you write a one-line `if-else` statement?",
+        "type": "text",
+        "answers": ["x if condition else y"],
+        "explanation": "Ternary operator condenses if-else into one line"
+      }
+    ],
+    "level_2": [
+      {
+        "question": "What method removes whitespace from string ends?",
+        "type": "text",
+        "answers": ["strip()", ".strip()"],
+        "explanation": "strip() removes leading/trailing whitespace"
+      },
+      {
+        "question": "How to split a string into a list by spaces?",
+        "type": "text",
+        "answers": ["split()", ".split()"],
+        "explanation": "split() without arguments splits on whitespace"
+      },
+      {
+        "question": "What method converts a string to uppercase?",
+        "type": "text",
+        "answers": ["upper()", ".upper()"],
+        "explanation": "upper() returns a new uppercase string"
+      },
+      {
+        "question": "How to check if a string starts with \"Py\"?",
+        "type": "text",
+        "answers": ["startswith(\"Py\")", ".startswith(\"Py\")"],
+        "explanation": "startswith() checks the beginning of a string"
+      },
+      {
+        "question": "How to replace \"cat\" with \"dog\" in a string?",
+        "type": "text",
+        "answers": ["replace(\"cat\", \"dog\")", ".replace(\"cat\", \"dog\")"],
+        "explanation": "replace() swaps substrings"
+      },
+      {
+        "question": "How to join a list of words into a string with commas?",
+        "type": "text",
+        "answers": ["\",\".join(words)"],
+        "explanation": "join() concatenates iterables with a separator"
+      }
+    ],
+    "level_3": [
+      {
+        "question": "Write code to reverse a list 'my_list'",
+        "type": "text",
+        "answers": ["my_list[::-1]", "list(reversed(my_list))"],
+        "validation": {
+          "test_cases": [
+            {"input": "[1,2,3]", "output": "[3,2,1]"},
+            {"input": "['a','b']", "output": "['b','a']"}
+          ]
+        }
+      },
+      {
+        "question": "Write code to remove the last item from `my_list`",
+        "type": "text",
+        "answers": ["my_list.pop()", "del my_list[-1]"],
+        "validation": {
+          "test_cases": [
+            {"input": "[1,2,3]", "output": "[1,2]"},
+            {"input": "['a']", "output": "[]"}
+          ]
+        }
+      },
+      {
+        "question": "Write code to combine two lists `list_a` and `list_b`",
+        "type": "text",
+        "answers": ["list_a + list_b", "[*list_a, *list_b]"],
+        "validation": {
+          "test_cases": [
+            {"input": "[[1], [2]]", "output": "[1,2]"},
+            {"input": "[[], ['x']]", "output": "['x']"}
+          ]
+        }
+      },
+      {
+        "question": "Write code to get unique items from `my_list`",
+        "type": "text",
+        "answers": ["list(set(my_list))"],
+        "validation": {
+          "test_cases": [
+            {"input": "[1,1,2]", "output": "[1,2]"},
+            {"input": "['a','a']", "output": "['a']"}
+          ]
+        }
+      },
+      {
+        "question": "Write code to sort `my_list` in descending order",
+        "type": "text",
+        "answers": ["sorted(my_list, reverse=True)", "my_list.sort(reverse=True)"],
+        "validation": {
+          "test_cases": [
+            {"input": "[3,1,2]", "output": "[3,2,1]"},
+            {"input": "['b','a']", "output": "['b','a']"}
+          ]
+        }
+      },
+      {
+        "question": "Write code to check if `my_list` contains item \"x\"",
+        "type": "text",
+        "answers": ["\"x\" in my_list"],
+        "validation": {
+          "test_cases": [
+            {"input": "['x', 'y']", "output": "True"},
+            {"input": "[1,2]", "output": "False"}
+          ]
+        }
+      }
+    ],
+    "level_4": [
+      {
+        "question": "How to check if key 'x' exists in dict 'd'?",
+        "type": "text",
+        "answers": ["'x' in d", "d.get('x') is not None"],
+        "explanation": "The 'in' operator is most Pythonic for key checks"
+      },
+      {
+        "question": "How to get all keys from dictionary `d`?",
+        "type": "text",
+        "answers": ["d.keys()", "list(d)"],
+        "explanation": "keys() returns a view of dictionary keys"
+      },
+      {
+        "question": "How to merge dictionaries `d1` and `d2` (Python 3.5+)?",
+        "type": "text",
+        "answers": ["{**d1, **d2}"],
+        "explanation": "Double asterisk unpacks dictionaries"
+      },
+      {
+        "question": "How to create a dictionary with default values?",
+        "type": "text",
+        "answers": ["from collections import defaultdict"],
+        "explanation": "defaultdict handles missing keys automatically"
+      },
+      {
+        "question": "Write code to remove key 'k' from dictionary `d`",
+        "type": "text",
+        "answers": ["d.pop('k')", "del d['k']"],
+        "validation": {
+          "test_cases": [
+            {"input": "{'k': 1}", "output": "{}"},
+            {"input": "{'x': 2}", "output": "{'x': 2}"}
+          ]
+        }
+      },
+      {
+        "question": "How to iterate through dictionary keys and values?",
+        "type": "text",
+        "answers": ["for k,v in d.items():"],
+        "validation": {
+          "test_cases": [
+            {"input": "{'a': 1}", "output": "a 1"}
+          ]
+        }
+      }
+    ],
+    "level_5": [
+      {
+        "question": "Write the Python code to read a file 'data.txt'",
+        "type": "text",
+        "answers": [
+          "with open('data.txt') as f:\n    content = f.read()",
+          "f = open('data.txt')\ncontent = f.read()\nf.close()"
+        ],
+        "validation": {
+          "required_keywords": ["open(", "read()"],
+          "forbidden": [";"]
+        }
+      },
+      {
+        "question": "Write code to append to a file 'log.txt'",
+        "type": "text",
+        "answers": [
+          "with open('log.txt','a') as f:",
+          "f = open('log.txt','a')"
+        ],
+        "validation": {
+          "required_keywords": ["open(", "'a'"],
+          "forbidden": ["'w'"]
+        }
+      },
+      {
+        "question": "How to read a file line by line into a list?",
+        "type": "text",
+        "answers": ["with open('file.txt') as f:\n    lines = f.readlines()"],
+        "validation": {
+          "required_keywords": ["readlines("]
+        }
+      },
+      {
+        "question": "Write code to write a list `data` to a CSV file",
+        "type": "text",
+        "answers": [
+          "import csv\nwith open('out.csv','w') as f:\n    writer = csv.writer(f)\n    writer.writerow(data)"
+        ],
+        "validation": {
+          "required_keywords": ["csv.writer(", "writerow("]
+        }
+      },
+      {
+        "question": "How to check if a file exists?",
+        "type": "text",
+        "answers": ["import os\nos.path.exists('file.txt')"],
+        "validation": {
+          "required_keywords": ["os.path", "exists("]
+        }
+      },
+      {
+        "question": "Write code to read a JSON file 'data.json'",
+        "type": "text",
+        "answers": ["import json\nwith open('data.json') as f:\n    data = json.load(f)"],
+        "validation": {
+          "required_keywords": ["json.load("]
+        }
+      }
+    ],
+    "level_6": [
+      {
+        "question": "Complete the try-except block:\n___ ValueError:\n    print('Error')",
+        "type": "text",
+        "answers": ["except", "except "],
+        "placeholder": "try:\n    x = int(input())\n___ ValueError:\n    print('Error')"
+      },
+      {
+        "question": "Complete the try-finally block:",
+        "type": "text",
+        "answers": ["finally", "finally "],
+        "placeholder": "try:\n    f = open('file.txt')\n___:\n    f.close()"
+      },
+      {
+        "question": "How to raise a custom exception?",
+        "type": "text",
+        "answers": ["raise Exception(\"message\")"],
+        "explanation": "raise creates an exception instance"
+      },
+      {
+        "question": "Write code to handle multiple exceptions",
+        "type": "text",
+        "answers": ["except (TypeError, ValueError):"],
+        "placeholder": "try:\n    x = int(input())\n___ (TypeError, ValueError):\n    print(\"Error\")"
+      },
+      {
+        "question": "How to get the error message from an exception?",
+        "type": "text",
+        "answers": ["except Exception as e:\n    print(str(e))"],
+        "explanation": "Exceptions can be assigned to variables with 'as'"
+      },
+      {
+        "question": "Complete the custom exception class:",
+        "type": "text",
+        "answers": ["Exception", "BaseException"],
+        "placeholder": "class MyError(___):\n    pass",
+        "explanation": "Custom exceptions should inherit from Exception"
+      }
+    ]
+  }
+}
